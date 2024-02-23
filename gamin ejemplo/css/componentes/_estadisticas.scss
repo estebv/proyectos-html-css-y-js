@@ -1,0 +1,32 @@
+.perfil--estadisticas{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0px 8px 8px 2px $gris;
+    margin-bottom: 25px;
+}
+
+.estaditicas__elemento{
+    padding-bottom: 20px;
+    margin: 6px ;
+    width: 75px;
+
+    h3{
+        font-family:$fuente1;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+
+    span{
+        font-family: $fuente1;
+        color: $gris;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+
+}
