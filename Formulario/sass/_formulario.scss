@@ -11,11 +11,10 @@
 
 .formulario {
 	background: variables.$color-fondo-formulario;
-	border: 1px solid variables.$color-borde;
 	border-radius: 10px;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	gap: 30px;
+	gap: 40px;
 	transition: 0.3s ease all;
 
 	&--hidden {
@@ -53,20 +52,20 @@
 	&__footer {
 		display: flex;
 		justify-content: center;
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 	}
 
 	&__titulo {
-		font-size: 20px;
+		font-size: 40px;
 		text-align: center;
 		font-weight: 500;
 	}
 
 	&__subtitulo {
-		font-size: 16px;
+		font-size: 22px;
 		font-weight: 500;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 
 	&__grupo-inputs {
@@ -83,32 +82,32 @@
 	}
 
 	&__label {
-		font-size: 14px;
+		font-size: 18px;
 		margin-bottom: 10px;
 	}
 
 	&__input {
-		height: 50px;
+		height: 60px;
 		width: 100%;
 		max-width: 280px;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		background: variables.$color-fondo-formulario;
-		border: 1px solid variables.$color-borde;
+		border: 2px solid variables.$color-fondo;
 		outline: none;
 		font-family: variables.$fuente-primaria;
-		font-size: 16px;
+		font-size: 18px;
 		color: #fff;
 		border-radius: 5px;
 		&:focus {
-			border: 1px solid variables.$color-borde-activo;
+			border: 2px solid variables.$color-borde-activo;
 		}
 
 		&--error {
-			border: 1px solid red;
+			border: 2px solid red;
 			&:focus {
-				border: 1px solid red;
+				border: 2px solid red;
 			}
 		}
 	}
@@ -119,7 +118,7 @@
 
 	&__leyenda {
 		margin-top: 10px;
-		font-size: 14px;
+		font-size: 18px;
 		display: none;
 	}
 
@@ -132,14 +131,16 @@
 		justify-content: space-between;
 		padding: 0 12px;
 		cursor: pointer;
+		background: variables.$color-primario;
 		font-family: variables.$fuente-primaria;
 		font-size: 16px;
 		font-weight: 500;
 		height: 50px;
 		width: 160px;
-		border-radius: 5px;
+		border-radius: 8px;
 		overflow: hidden;
 
+	
 		&--disabled {
 			position: relative;
 			&::after {
@@ -185,12 +186,12 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 13px;
-			height: 13px;
-			border-radius: 13px;
+			width: 20px;
+			height: 14px;
+			border-radius: 14px;
 			background: variables.$color-primario;
 			position: absolute;
-			left: 27px;
+			left: 26px;
 		}
 	}
 
@@ -199,26 +200,20 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		border: 1px solid variables.$color-borde;
 		border-radius: 5px;
-		font-size: 14px;
+		border-bottom: 2px solid black; /* Agrega un borde inferior de 2px sólido de color negro */
+		font-size: 20px;
 		padding: 0 25px 0px 60px;
 		position: relative;
 		cursor: pointer;
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			left: 20px;
-			height: 25px;
-			width: 25px;
-			border-radius: 25px;
-			border: 1px solid variables.$color-borde;
-		}
 	}
 
 	&__parrafos {
-		line-height: 30px;
+		line-height: 40px;
 		text-align: center;
 	}
+	.formulario__btn:hover {
+		background-color:aqua;
+	
+	  }
 }
